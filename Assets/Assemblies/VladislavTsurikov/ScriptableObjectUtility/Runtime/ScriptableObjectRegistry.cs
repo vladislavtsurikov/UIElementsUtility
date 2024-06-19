@@ -13,17 +13,21 @@ namespace VladislavTsurikov.ScriptableObjectUtility.Runtime
 #endif
         where T : ScriptableObject
     {
-        private static List<T> _allInstances;
+#if UNITY_EDITOR
+        private static bool _findAllScriptableObject = true;
+#endif
+        
+        private static List<T> _allInstances = new List<T>();
         public static List<T> AllInstances
         {
             get
             {
-                if (_allInstances == null)
-                {
 #if UNITY_EDITOR
+                if (_findAllScriptableObject)
+                {
                     FindAllScriptableObject();
-#endif
                 }
+#endif
                 
                 return _allInstances;
             }
@@ -40,7 +44,7 @@ namespace VladislavTsurikov.ScriptableObjectUtility.Runtime
         
         private static void FindAllScriptableObject()
         {
-            _allInstances = new List<T>(); 
+            _findAllScriptableObject = false;
             
             var guids = AssetDatabase.FindAssets($"t:{typeof(T).Name}");
 
@@ -55,12 +59,13 @@ namespace VladislavTsurikov.ScriptableObjectUtility.Runtime
 
         private void OnEnable()
         {
-            if (_allInstances == null)
-            {
 #if UNITY_EDITOR
+            if (_findAllScriptableObject)
+            {
+
                 FindAllScriptableObject();
-#endif
             }
+#endif
             
             AddInstance(this as T);
         }

@@ -26,5 +26,11 @@ MonoBehaviour:
     Icon: {fileID: 21300000, guid: fbef0b1a59b4ad840890ea0db99eccc2, type: 3}
     Color: {r: 0.891119, g: 0.5734547, b: 0.073355205, a: 1}
   - Name: Sword Icon
-    Icon: {fileID: 21300000, guid: 8f115be1afb6c2b4d9ec2c659ed1c979, type: 3}
+    Icon: {fileID: 21300000, guid: 3fda588bcf1c5b343bcc380a7edbc4b9, type: 3}
     Color: {r: 0.7056784, g: 0.07306755, b: 0.64028436, a: 1}
+  - Name: Sword Icon
+    Icon: {fileID: 21300000, guid: 8f115be1afb6c2b4d9ec2c659ed1c979, type: 3}
+    Color: {r: 0.172549, g: 0.33830386, b: 0.7529412, a: 1}
+  - Name: Sword Icon
+    Icon: {fileID: 21300000, guid: 6bded1138e5e0fa43b3a528f2a4aad02, type: 3}
+    Color: {r: 0.29957277, g: 0.6415094, b: 0.45773727, a: 1}

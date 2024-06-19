@@ -18,9 +18,9 @@
     background-color: rgba(0, 0, 0, 0);
     flex-grow: 1;
     font-size: 28px;
-    -unity-font-definition: initial;
     color: rgb(255, 255, 255);
     -unity-font: url('project://database/Assets/Assemblies/VladislavTsurikov/UIElementsUtility/Content/Fonts/Inter/Inter-Medium.ttf?fileID=12800000&guid=54ff283364abd0c449f3541de88ba756&type=3#Inter-Medium');
+    -unity-font-definition: initial;
 }
 
 .button:hover {
@@ -30,6 +30,7 @@
     transition-duration: 0s, 100ms, 100ms;
     transition-timing-function: ease, linear, linear;
     transition-delay: 0s, 0s, 0s;
+    -unity-font-definition: initial;
 }
 
 .button:selected {
@@ -39,6 +40,7 @@
     transition-duration: 0s, 100ms, 100ms;
     transition-timing-function: ease, linear, linear;
     transition-delay: 0s, 0s, 0s;
+    -unity-font-definition: initial;
 }
 
 .button:focus {
@@ -48,4 +50,5 @@
     transition-duration: 0s, 100ms, 100ms;
     transition-timing-function: ease, linear, linear;
     transition-delay: 0s, 0s, 0s;
+    -unity-font-definition: initial;
 }

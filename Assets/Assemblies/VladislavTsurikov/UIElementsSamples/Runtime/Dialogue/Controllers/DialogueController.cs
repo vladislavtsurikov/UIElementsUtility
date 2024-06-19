@@ -1,6 +1,7 @@
 #if !DISABLE_VISUAL_ELEMENTS
 using UnityEngine;
 using UnityEngine.UIElements;
+using VladislavTsurikov.UIElementsUtility.Runtime.Groups.Layouts.Data;
 
 namespace VladislavTsurikov.UIElementsSamples.Runtime.Dialogue.Controllers
 {
@@ -11,6 +12,9 @@ namespace VladislavTsurikov.UIElementsSamples.Runtime.Dialogue.Controllers
         private UIDocument _uiDocument;
 
         private DialogueView _dialogueView;
+        
+        [SerializeField] 
+        private LayoutGroup _layoutGroup;
 
         private void OnEnable()
         {

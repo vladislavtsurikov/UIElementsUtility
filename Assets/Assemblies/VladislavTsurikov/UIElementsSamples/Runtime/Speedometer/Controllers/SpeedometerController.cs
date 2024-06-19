@@ -2,6 +2,7 @@
 using UnityEngine;
 using UnityEngine.UIElements;
 using VladislavTsurikov.UIElementsSamples.Runtime.Speedometer.Views;
+using VladislavTsurikov.UIElementsUtility.Runtime.Groups.Layouts.Data;
 
 namespace VladislavTsurikov.UIElementsSamples.Runtime.Speedometer.Controllers
 {
@@ -12,7 +13,11 @@ namespace VladislavTsurikov.UIElementsSamples.Runtime.Speedometer.Controllers
         private UIDocument _uiDocument;
         
         private SpeedometerView _view;
-
+        
+        
+        [SerializeField] 
+        private LayoutGroup _layoutGroup;
+        
         private void OnEnable()
         {
             if (!_uiDocument.isActiveAndEnabled || _uiDocument.rootVisualElement == null)

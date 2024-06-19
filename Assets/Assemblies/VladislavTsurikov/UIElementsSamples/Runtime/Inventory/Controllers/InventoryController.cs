@@ -2,6 +2,7 @@
 using UnityEngine;
 using UnityEngine.UIElements;
 using VladislavTsurikov.UIElementsSamples.Runtime.Content.Inventory.Scripts;
+using VladislavTsurikov.UIElementsUtility.Runtime.Groups.Layouts.Data;
 
 namespace VladislavTsurikov.UIElementsSamples.Runtime.Inventory.Controllers
 {
@@ -15,6 +16,9 @@ namespace VladislavTsurikov.UIElementsSamples.Runtime.Inventory.Controllers
         private Content.Inventory.Scripts.Inventory _inventory;
 
         private InventoryView _view;
+        
+        [SerializeField] 
+        private LayoutGroup _layoutGroup;
 
         private void OnEnable()
         {

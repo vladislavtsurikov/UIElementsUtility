@@ -17,6 +17,7 @@ namespace VladislavTsurikov.UIElementsUtility.Runtime.Groups.Layouts.Data
             menuName = "VladislavTsurikov/UIElementsUtility/Layout Group (UXML)"
         )
     ]
+    
     public class LayoutGroup : FilesDataGroup<LayoutGroup, LayoutInfo>
     {
         internal void AddNewItem()

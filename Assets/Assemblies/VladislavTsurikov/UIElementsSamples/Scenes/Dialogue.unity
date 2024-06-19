@@ -331,7 +331,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2064787447}
+  - {fileID: 1299287723}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -406,6 +406,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _uiDocument: {fileID: 569135505}
+  _layoutGroup: {fileID: 11400000, guid: 8c640993a765afe4d87a9b4f30466f32, type: 2}
 --- !u!4 &667825861
 Transform:
   m_ObjectHideFlags: 0
@@ -620,7 +621,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 474bcb49853aa07438625e644c072ee6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!21 &2064787447
+--- !u!21 &1299287723
 Material:
   serializedVersion: 8
   m_ObjectHideFlags: 0
