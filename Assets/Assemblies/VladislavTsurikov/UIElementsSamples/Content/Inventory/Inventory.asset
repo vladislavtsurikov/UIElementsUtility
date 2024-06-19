@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 42c488f12d1545f1963adc1d5f5a9ab3, type: 3}
+  m_Name: Inventory
+  m_EditorClassIdentifier: 
+  _items:
+  - Name: Diamond Icon
+    Icon: {fileID: 21300000, guid: 6bded1138e5e0fa43b3a528f2a4aad02, type: 3}
+    Color: {r: 0.6883555, g: 0.8703542, b: 0.5553921, a: 1}
+  - Name: Drone Icon
+    Icon: {fileID: 21300000, guid: c2fe036630529a34a92691c7fec5797a, type: 3}
+    Color: {r: 0.27792624, g: 0.9055432, b: 0.27163365, a: 1}
+  - Name: Potion Icon
+    Icon: {fileID: 21300000, guid: 3fda588bcf1c5b343bcc380a7edbc4b9, type: 3}
+    Color: {r: 0.1298467, g: 0.59026605, b: 0.92161393, a: 1}
+  - Name: Skull Icon
+    Icon: {fileID: 21300000, guid: fbef0b1a59b4ad840890ea0db99eccc2, type: 3}
+    Color: {r: 0.891119, g: 0.5734547, b: 0.073355205, a: 1}
+  - Name: Sword Icon
+    Icon: {fileID: 21300000, guid: 8f115be1afb6c2b4d9ec2c659ed1c979, type: 3}
+    Color: {r: 0.7056784, g: 0.07306755, b: 0.64028436, a: 1}

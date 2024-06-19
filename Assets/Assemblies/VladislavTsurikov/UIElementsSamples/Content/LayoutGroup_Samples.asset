@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 45107bc8371a73745b36cf07fccffb23, type: 3}
+  m_Name: LayoutGroup_Samples
+  m_EditorClassIdentifier: 
+  _groupName: Samples
+  _assetDefaultName: LayoutGroup
+  _items:
+  - UxmlReference: {fileID: 9197481963319205126, guid: fe5580366dc86b647a9cfb0666adae19, type: 3}
+  - UxmlReference: {fileID: 9197481963319205126, guid: 4fb5993230d37e647b42fb39e0d474b6, type: 3}
+  - UxmlReference: {fileID: 9197481963319205126, guid: 5a9371efcd828804cac144f1d7542257, type: 3}
+  - UxmlReference: {fileID: 9197481963319205126, guid: ace36d8719bc74d41bb6631f95487cd8, type: 3}
+  - UxmlReference: {fileID: 9197481963319205126, guid: f8526e8bd68ae174bab6feec6a75b270, type: 3}
+  - UxmlReference: {fileID: 9197481963319205126, guid: 96c3f66f82e05f0458720228503fd1a4, type: 3}

@@ -1,0 +1,16 @@
+//.........................
+//.....Generated File......
+//.........................
+//.......Do not edit.......
+//.........................
+
+using VladislavTsurikov.UIElementsUtility.Runtime.Groups.Styles.Data;
+using UnityEngine.UIElements;
+using VladislavTsurikov.UIElementsUtility.Runtime.Core.Utility;
+
+namespace VladislavTsurikov.UIElementsUtility
+{
+    public static class GetStyle
+    {
+    }
+}
