@@ -1,14 +1,11 @@
 ﻿using System.Linq;
+using UnityEditor;
 using UnityEngine;
 using UnityEngine.UIElements;
 using VladislavTsurikov.UIElementsUtility.Runtime.Core;
-using VladislavTsurikov.Utility.Runtime.Extensions;
-#if UNITY_EDITOR
-using UnityEditor;
-using System.IO;
-#endif
+using VladislavTsurikov.Utility.Runtime;
 
-namespace VladislavTsurikov.UIElementsUtility.Runtime.Groups.Styles.Data
+namespace VladislavTsurikov.UIElementsUtility.Runtime.Groups.Styles
 {
     [
         CreateAssetMenu

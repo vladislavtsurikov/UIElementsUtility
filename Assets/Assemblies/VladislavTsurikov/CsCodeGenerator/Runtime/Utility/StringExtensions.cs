@@ -1,4 +1,4 @@
-namespace VladislavTsurikov.CsCodeGenerator.Runtime.Utility
+namespace VladislavTsurikov.CsCodeGenerator.Runtime
 {
     public static class StringExtensions
     {

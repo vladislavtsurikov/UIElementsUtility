@@ -1,12 +1,9 @@
 using System;
 using System.Collections.Generic;
-using Samples.Scripts;
-using UnityEngine;
-#if UNITY_EDITOR
 using UnityEditor;
-#endif
+using UnityEngine;
 
-namespace VladislavTsurikov.UIElementsSamples.Runtime.Content.Inventory.Scripts
+namespace VladislavTsurikov.UIElementsSamples.Runtime.Inventory
 {
     [CreateAssetMenu(fileName = "Inventory", menuName = "VladislavTsurikov/UIElementsSamples/Inventory")]
     public class Inventory : ScriptableObject

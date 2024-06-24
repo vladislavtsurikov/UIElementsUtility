@@ -1,9 +1,9 @@
 #if UNITY_EDITOR
 using UnityEditor;
 using UnityEngine;
-using VladislavTsurikov.UIElementsUtility.Runtime.Groups.Textures.Data;
+using VladislavTsurikov.UIElementsUtility.Runtime.Groups.Textures;
 
-namespace VladislavTsurikov.UIElementsUtility.Editor.Textures
+namespace VladislavTsurikov.UIElementsUtility.Editor.Groups.Textures
 {
     [CustomEditor(typeof(TextureGroup))]
     public class TextureGroupEditor : UnityEditor.Editor

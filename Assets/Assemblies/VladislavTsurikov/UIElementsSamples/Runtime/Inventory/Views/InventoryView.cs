@@ -2,8 +2,9 @@
 using UnityEngine;
 using UnityEngine.UIElements;
 using VladislavTsurikov.UIElementsUtility;
+using VladislavTsurikov.UIElementsUtility.Runtime;
 
-namespace VladislavTsurikov.UIElementsSamples.Runtime.Content.Inventory.Scripts
+namespace VladislavTsurikov.UIElementsSamples.Runtime.Inventory
 {
     public class InventoryView : VisualElement
     {

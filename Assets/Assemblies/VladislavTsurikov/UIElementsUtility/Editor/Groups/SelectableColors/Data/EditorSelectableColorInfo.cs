@@ -2,11 +2,10 @@
 using System;
 using UnityEngine;
 using VladislavTsurikov.ColorUtility.Runtime;
-using VladislavTsurikov.UIElementsUtility.Editor.Groups.EditorColors.Data;
-using VladislavTsurikov.UIElementsUtility.Editor.Groups.SelectableColors.Enums;
-using VladislavTsurikov.Utility.Runtime.Extensions;
+using VladislavTsurikov.UIElementsUtility.Editor.Groups.EditorColors;
+using VladislavTsurikov.Utility.Runtime;
 
-namespace VladislavTsurikov.UIElementsUtility.Editor.Groups.SelectableColors.Data
+namespace VladislavTsurikov.UIElementsUtility.Editor.Groups.SelectableColors
 {
     [Serializable]
     public class EditorSelectableColorInfo

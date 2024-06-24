@@ -1,7 +1,7 @@
 #if UNITY_EDITOR
 using UnityEditor;
 using UnityEngine;
-using VladislavTsurikov.UIElementsUtility.Runtime.Groups.Layouts.Data;
+using VladislavTsurikov.UIElementsUtility.Runtime.Groups.Layouts;
 
 namespace VladislavTsurikov.UIElementsUtility.Editor.Groups.Layouts
 {

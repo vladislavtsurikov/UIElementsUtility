@@ -6,15 +6,60 @@
 
 #if UNITY_EDITOR
 using UnityEngine;
-using VladislavTsurikov.UIElementsUtility.Editor.Groups.SelectableColors.Data;
+using VladislavTsurikov.UIElementsUtility.Editor.Groups.EditorColors;
+using VladislavTsurikov.UIElementsUtility.Editor.Groups.SelectableColors;
 using VladislavTsurikov.UIElementsUtility.Runtime.Core.Utility;
-using VladislavTsurikov.UIElementsUtility.Editor.Groups.EditorColors.Data;
-using VladislavTsurikov.UIElementsUtility.Editor.Groups.SelectableColors.Enums;
 
-namespace VladislavTsurikov.UIElementsUtility
+namespace VladislavTsurikov.UIElementsUtility.Runtime
 {
     public static class GetSelectableColor
     {
+        public static class EditorUI
+        {
+            public enum ColorName
+            {
+                ButtonContainer,
+                ButtonIcon,
+                ButtonText,
+                Add,
+                Remove
+            }
+
+            private static EditorSelectableColorPalette s_selectableColorPalette;
+            private static EditorSelectableColorInfo s_buttonContainer;
+            private static EditorSelectableColorInfo s_buttonIcon;
+            private static EditorSelectableColorInfo s_buttonText;
+            private static EditorSelectableColorInfo s_add;
+            private static EditorSelectableColorInfo s_remove;
+
+            private static EditorSelectableColorPalette SelectableColorPalette => s_selectableColorPalette != null? s_selectableColorPalette: s_selectableColorPalette = DataGroupUtility.GetGroup<EditorSelectableColorPalette, EditorSelectableColorInfo>("EditorUI");
+
+            public static EditorSelectableColorInfo ButtonContainer => s_buttonContainer ?? (s_buttonContainer = GetSelectableColorInfo(ColorName.ButtonContainer));
+
+            public static EditorSelectableColorInfo ButtonIcon => s_buttonIcon ?? (s_buttonIcon = GetSelectableColorInfo(ColorName.ButtonIcon));
+
+            public static EditorSelectableColorInfo ButtonText => s_buttonText ?? (s_buttonText = GetSelectableColorInfo(ColorName.ButtonText));
+
+            public static EditorSelectableColorInfo Add => s_add ?? (s_add = GetSelectableColorInfo(ColorName.Add));
+
+            public static EditorSelectableColorInfo Remove => s_remove ?? (s_remove = GetSelectableColorInfo(ColorName.Remove));
+
+            public static Color GetColor(ColorName colorName, SelectionState state)
+            {
+                return SelectableColorPalette.GetColor(colorName.ToString(), state);
+            }
+
+            public static EditorThemeColor GetThemeColor(ColorName colorName, SelectionState state)
+            {
+                return SelectableColorPalette.GetThemeColor(colorName.ToString(), state);
+            }
+
+            private static EditorSelectableColorInfo GetSelectableColorInfo(ColorName colorName)
+            {
+                return SelectableColorPalette.GetSelectableColorInfo(colorName.ToString());
+            }
+        }
+
         public static class Default
         {
             public enum ColorName
@@ -88,52 +133,6 @@ namespace VladislavTsurikov.UIElementsUtility
             public static EditorSelectableColorInfo Orange => s_orange ?? (s_orange = GetSelectableColorInfo(ColorName.Orange));
 
             public static EditorSelectableColorInfo DeepOrange => s_deepOrange ?? (s_deepOrange = GetSelectableColorInfo(ColorName.DeepOrange));
-
-            public static Color GetColor(ColorName colorName, SelectionState state)
-            {
-                return SelectableColorPalette.GetColor(colorName.ToString(), state);
-            }
-
-            public static EditorThemeColor GetThemeColor(ColorName colorName, SelectionState state)
-            {
-                return SelectableColorPalette.GetThemeColor(colorName.ToString(), state);
-            }
-
-            private static EditorSelectableColorInfo GetSelectableColorInfo(ColorName colorName)
-            {
-                return SelectableColorPalette.GetSelectableColorInfo(colorName.ToString());
-            }
-        }
-
-        public static class EditorUI
-        {
-            public enum ColorName
-            {
-                ButtonContainer,
-                ButtonIcon,
-                ButtonText,
-                Add,
-                Remove
-            }
-
-            private static EditorSelectableColorPalette s_selectableColorPalette;
-            private static EditorSelectableColorInfo s_buttonContainer;
-            private static EditorSelectableColorInfo s_buttonIcon;
-            private static EditorSelectableColorInfo s_buttonText;
-            private static EditorSelectableColorInfo s_add;
-            private static EditorSelectableColorInfo s_remove;
-
-            private static EditorSelectableColorPalette SelectableColorPalette => s_selectableColorPalette != null? s_selectableColorPalette: s_selectableColorPalette = DataGroupUtility.GetGroup<EditorSelectableColorPalette, EditorSelectableColorInfo>("EditorUI");
-
-            public static EditorSelectableColorInfo ButtonContainer => s_buttonContainer ?? (s_buttonContainer = GetSelectableColorInfo(ColorName.ButtonContainer));
-
-            public static EditorSelectableColorInfo ButtonIcon => s_buttonIcon ?? (s_buttonIcon = GetSelectableColorInfo(ColorName.ButtonIcon));
-
-            public static EditorSelectableColorInfo ButtonText => s_buttonText ?? (s_buttonText = GetSelectableColorInfo(ColorName.ButtonText));
-
-            public static EditorSelectableColorInfo Add => s_add ?? (s_add = GetSelectableColorInfo(ColorName.Add));
-
-            public static EditorSelectableColorInfo Remove => s_remove ?? (s_remove = GetSelectableColorInfo(ColorName.Remove));
 
             public static Color GetColor(ColorName colorName, SelectionState state)
             {

@@ -1,9 +1,9 @@
 #if !DISABLE_VISUAL_ELEMENTS
 using UnityEngine;
 using UnityEngine.UIElements;
-using VladislavTsurikov.UIElementsUtility.Runtime.Groups.Layouts.Data;
+using VladislavTsurikov.UIElementsUtility.Runtime.Groups.Layouts;
 
-namespace VladislavTsurikov.UIElementsSamples.Runtime.Dialogue.Controllers
+namespace VladislavTsurikov.UIElementsSamples.Runtime.Dialogue
 {
     [ExecuteInEditMode]
     public class DialogueController : MonoBehaviour

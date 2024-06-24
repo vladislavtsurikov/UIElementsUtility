@@ -1,7 +1,7 @@
 #if UNITY_EDITOR
 using UnityEditor;
 using UnityEngine;
-using VladislavTsurikov.UIElementsUtility.Runtime.Groups.Fonts.Data;
+using VladislavTsurikov.UIElementsUtility.Runtime.Groups.Fonts;
 
 namespace VladislavTsurikov.UIElementsUtility.Editor.Groups.Fonts
 {

@@ -1,18 +1,18 @@
 #if UNITY_EDITOR
 using System.IO;
 using System.Linq;
-using Samples.Scripts;
 using UnityEditor;
 using UnityEngine;
+using VladislavTsurikov.UIElementsSamples.Runtime.Inventory;
 
-namespace VladislavTsurikov.UIElementsSamples.Runtime.Content.Inventory.Editor
+namespace VladislavTsurikov.UIElementsSamples.Editor.Inventory
 {
     public static class InventoryItemImporter
     {
         [MenuItem("Tools/Vladislav Tsurikov/Inventory/Inventory Item Importer")]
         private static void CreateInventoryItemFromSprites()
         {
-            Scripts.Inventory inventory = GetInventory();
+            Runtime.Inventory.Inventory inventory = GetInventory();
             if (inventory == null)
             {
                 return;
@@ -54,9 +54,9 @@ namespace VladislavTsurikov.UIElementsSamples.Runtime.Content.Inventory.Editor
             }
         }
         
-        private static Scripts.Inventory GetInventory()
+        private static Runtime.Inventory.Inventory GetInventory()
         {
-            Scripts.Inventory inventory = null;
+            Runtime.Inventory.Inventory inventory = null;
             while (inventory == null)
             {
                 string path = EditorUtility.OpenFilePanel("Select Inventory", "Assets", "asset");
@@ -68,7 +68,7 @@ namespace VladislavTsurikov.UIElementsSamples.Runtime.Content.Inventory.Editor
 
                 string assetPath = "Assets" + path.Substring(Application.dataPath.Length);
                 Object assetObject = AssetDatabase.LoadAssetAtPath(assetPath, typeof(Object));
-                inventory = assetObject as Scripts.Inventory;
+                inventory = assetObject as Runtime.Inventory.Inventory;
 
                 if (inventory == null)
                 {

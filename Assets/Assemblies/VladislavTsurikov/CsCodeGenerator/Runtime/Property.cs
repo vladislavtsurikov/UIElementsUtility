@@ -1,5 +1,4 @@
 ﻿using System;
-using VladislavTsurikov.CsCodeGenerator.Runtime.Enums;
 
 namespace VladislavTsurikov.CsCodeGenerator.Runtime
 {
@@ -37,12 +36,12 @@ namespace VladislavTsurikov.CsCodeGenerator.Runtime
                     }
                     else
                     {
-                        string result = Util.NewLine + Indent + "{";
-                        string currentIndent = Util.NewLine + Indent + CsGenerator.IndentSingle;
+                        string result = Constants.NewLine + Indent + "{";
+                        string currentIndent = Constants.NewLine + Indent + CsGenerator.IndentSingle;
                     
                         result += currentIndent + "get { return " + GetterBody + "; }";
                         result += currentIndent + "set { " + SetterBody + "; }";
-                        result += Util.NewLine + Indent + "}";
+                        result += Constants.NewLine + Indent + "}";
 
                         return result;
                     }

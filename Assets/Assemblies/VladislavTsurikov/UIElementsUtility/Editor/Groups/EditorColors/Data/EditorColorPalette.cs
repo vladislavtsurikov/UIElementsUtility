@@ -3,9 +3,9 @@ using System.Linq;
 using UnityEngine;
 using VladislavTsurikov.ColorUtility.Runtime;
 using VladislavTsurikov.UIElementsUtility.Runtime.Core;
-using VladislavTsurikov.Utility.Runtime.Extensions;
+using VladislavTsurikov.Utility.Runtime;
 
-namespace VladislavTsurikov.UIElementsUtility.Editor.Groups.EditorColors.Data
+namespace VladislavTsurikov.UIElementsUtility.Editor.Groups.EditorColors
 {
     [
         CreateAssetMenu

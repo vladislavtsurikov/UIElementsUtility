@@ -6,7 +6,7 @@ using System.Text;
 using System.Text.RegularExpressions;
 using UnityEditor;
 
-namespace VladislavTsurikov.Utility.Runtime.Extensions
+namespace VladislavTsurikov.Utility.Runtime
 {
     public static class StringExtension
     {

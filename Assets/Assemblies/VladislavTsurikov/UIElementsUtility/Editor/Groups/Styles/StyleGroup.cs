@@ -1,7 +1,7 @@
 #if UNITY_EDITOR
 using UnityEditor;
 using UnityEngine;
-using VladislavTsurikov.UIElementsUtility.Runtime.Groups.Styles.Data;
+using VladislavTsurikov.UIElementsUtility.Runtime.Groups.Styles;
 
 namespace VladislavTsurikov.UIElementsUtility.Editor.Groups.Styles
 {

@@ -4,14 +4,42 @@
 //.......Do not edit.......
 //.........................
 
-using VladislavTsurikov.UIElementsUtility.Runtime.Core.Utility;
 using UnityEngine.UIElements;
-using VladislavTsurikov.UIElementsUtility.Runtime.Groups.Layouts.Data;
+using VladislavTsurikov.UIElementsUtility.Runtime.Core.Utility;
+using VladislavTsurikov.UIElementsUtility.Runtime.Groups.Layouts;
 
-namespace VladislavTsurikov.UIElementsUtility
+namespace VladislavTsurikov.UIElementsUtility.Runtime
 {
     public static class GetLayout
     {
+        public static class VisualElements
+        {
+            public enum LayoutName
+            {
+                Button,
+                ListView,
+                ListViewItem
+            }
+
+            private static LayoutGroup s_layoutGroup;
+            private static VisualTreeAsset s_button;
+            private static VisualTreeAsset s_listView;
+            private static VisualTreeAsset s_listViewItem;
+
+            private static LayoutGroup LayoutGroup => s_layoutGroup != null ? s_layoutGroup: s_layoutGroup = DataGroupUtility.GetGroup<LayoutGroup, LayoutInfo>("VisualElements");
+
+            public static VisualTreeAsset Button => s_button ? s_button : s_button = GetVisualTreeAsset(LayoutName.Button);
+
+            public static VisualTreeAsset ListView => s_listView ? s_listView : s_listView = GetVisualTreeAsset(LayoutName.ListView);
+
+            public static VisualTreeAsset ListViewItem => s_listViewItem ? s_listViewItem : s_listViewItem = GetVisualTreeAsset(LayoutName.ListViewItem);
+
+            private static VisualTreeAsset GetVisualTreeAsset(LayoutName layoutName)
+            {
+                return LayoutGroup.GetVisualTreeAsset(layoutName.ToString());
+            }
+        }
+
         public static class Samples
         {
             public enum LayoutName

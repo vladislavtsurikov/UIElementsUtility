@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using VladislavTsurikov.CsCodeGenerator.Runtime.Enums;
 
 namespace VladislavTsurikov.CsCodeGenerator.Runtime
 {
@@ -22,7 +21,7 @@ namespace VladislavTsurikov.CsCodeGenerator.Runtime
         protected string AccessFormatted => Indent + AccessModifier.ToTextLower() + " ";
 
         public List<KeyWord> KeyWords { get; set; } = new List<KeyWord>();
-        public KeyWord SingleKeyWord { set { KeyWords.Add(value); } }
+        public KeyWord SingleKeyWord { set => KeyWords.Add(value); }
         protected string KeyWordsFormated => KeyWords?.Count > 0 ? String.Join(" ", KeyWords.Select(a => a.ToTextLower())) + " " : "";
 
         public virtual BuiltInDataType? BuiltInDataType { get; set; }
@@ -57,9 +56,9 @@ namespace VladislavTsurikov.CsCodeGenerator.Runtime
 
         public override string ToString()
         {
-            string result = Comment != null ? (Util.NewLine + Indent + "// " + Comment) : "";
+            string result = Comment != null ? (Constants.NewLine + Indent + "// " + Comment) : "";
             result += HasAttributes ? Attributes.ToStringList(Indent) : "";
-            result += Util.NewLine + Signature;
+            result += Constants.NewLine + Signature;
             return result;
         }
     }

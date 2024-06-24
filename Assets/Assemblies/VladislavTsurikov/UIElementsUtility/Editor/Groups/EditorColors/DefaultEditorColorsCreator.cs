@@ -3,7 +3,6 @@ using System.IO;
 using UnityEngine;
 using VladislavTsurikov.UIElementsUtility.Content;
 using VladislavTsurikov.UIElementsUtility.Editor.Core;
-using VladislavTsurikov.UIElementsUtility.Editor.Groups.EditorColors.Data;
 
 namespace VladislavTsurikov.UIElementsUtility.Editor.Groups.EditorColors
 {

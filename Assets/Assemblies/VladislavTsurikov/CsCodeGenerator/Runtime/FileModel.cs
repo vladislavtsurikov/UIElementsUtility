@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
-using VladislavTsurikov.CsCodeGenerator.Runtime.Utility;
 
 namespace VladislavTsurikov.CsCodeGenerator.Runtime
 {
@@ -17,7 +16,7 @@ namespace VladislavTsurikov.CsCodeGenerator.Runtime
 
         public string Name { get; set; }
 
-        public string Extension { get; set; } = Util.CsExtension;
+        public string Extension { get; set; } = Constants.CsExtension;
 
         public string FullName => Name + "." + Extension;
 
@@ -36,22 +35,22 @@ namespace VladislavTsurikov.CsCodeGenerator.Runtime
             
             foreach (var preprocessorDirective in PreprocessorDirectives)
             {
-                result += "#if " + preprocessorDirective + Util.NewLine;
+                result += "#if " + preprocessorDirective + Constants.NewLine;
             }
             
-            string usingText = UsingDirectives.Count > 0 ? Util.Using + " " : "";
-            result += usingText + String.Join(Util.NewLine + usingText, UsingDirectives);
-            result += Util.NewLineDouble + Util.Namespace + " " + Namespace;
-            result += Util.NewLine + "{";
-            result += String.Join(Util.NewLine, Enums);
-            result += (Enums.Count > 0 && Classes.Count > 0) ? Util.NewLine : "";
-            result += String.Join(Util.NewLine, Classes);
-            result += Util.NewLine + "}";
-            result += Util.NewLine;
+            string usingText = UsingDirectives.Count > 0 ? Constants.Using + " " : "";
+            result += usingText + String.Join(Constants.NewLine + usingText, UsingDirectives);
+            result += Constants.NewLineDouble + Constants.Namespace + " " + Namespace;
+            result += Constants.NewLine + "{";
+            result += String.Join(Constants.NewLine, Enums);
+            result += (Enums.Count > 0 && Classes.Count > 0) ? Constants.NewLine : "";
+            result += String.Join(Constants.NewLine, Classes);
+            result += Constants.NewLine + "}";
+            result += Constants.NewLine;
             
             foreach (var preprocessorDirective in PreprocessorDirectives)
             {
-                result += "#endif" + Util.NewLine;
+                result += "#endif" + Constants.NewLine;
             }
             
             return result;
@@ -88,7 +87,7 @@ namespace VladislavTsurikov.CsCodeGenerator.Runtime
             namesStringBuilder.AppendLine("//.......Do not edit.......");
             namesStringBuilder.AppendLine("//.........................");
 
-            return namesStringBuilder + Util.NewLine;
+            return namesStringBuilder + Constants.NewLine;
         }
     }
 }

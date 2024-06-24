@@ -1,7 +1,7 @@
 using System;
 using UnityEngine;
 
-namespace Samples.Scripts
+namespace VladislavTsurikov.UIElementsSamples.Runtime.Inventory
 {
     [Serializable]
     public class Item

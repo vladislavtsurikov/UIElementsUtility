@@ -2,7 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 
-namespace VladislavTsurikov.CsCodeGenerator.Runtime.Utility
+namespace VladislavTsurikov.CsCodeGenerator.Runtime
 {
     public static class NamespaceUtility
     {

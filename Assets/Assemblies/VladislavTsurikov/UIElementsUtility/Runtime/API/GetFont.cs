@@ -5,10 +5,10 @@
 //.........................
 
 using UnityEngine;
-using VladislavTsurikov.UIElementsUtility.Runtime.Groups.Fonts.Data;
 using VladislavTsurikov.UIElementsUtility.Runtime.Core.Utility;
+using VladislavTsurikov.UIElementsUtility.Runtime.Groups.Fonts;
 
-namespace VladislavTsurikov.UIElementsUtility
+namespace VladislavTsurikov.UIElementsUtility.Runtime
 {
     public static class GetFont
     {

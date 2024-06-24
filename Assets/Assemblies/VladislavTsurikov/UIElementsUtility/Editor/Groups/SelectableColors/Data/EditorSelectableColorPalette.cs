@@ -2,12 +2,11 @@
 using System.Linq;
 using UnityEngine;
 using VladislavTsurikov.ColorUtility.Runtime;
-using VladislavTsurikov.UIElementsUtility.Editor.Groups.EditorColors.Data;
-using VladislavTsurikov.UIElementsUtility.Editor.Groups.SelectableColors.Enums;
+using VladislavTsurikov.UIElementsUtility.Editor.Groups.EditorColors;
 using VladislavTsurikov.UIElementsUtility.Runtime.Core;
-using VladislavTsurikov.Utility.Runtime.Extensions;
+using VladislavTsurikov.Utility.Runtime;
 
-namespace VladislavTsurikov.UIElementsUtility.Editor.Groups.SelectableColors.Data
+namespace VladislavTsurikov.UIElementsUtility.Editor.Groups.SelectableColors
 {
     [
         CreateAssetMenu

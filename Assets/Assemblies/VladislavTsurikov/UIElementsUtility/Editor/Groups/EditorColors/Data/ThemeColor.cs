@@ -1,7 +1,7 @@
 ﻿#if UNITY_EDITOR
 using System;
 
-namespace VladislavTsurikov.UIElementsUtility.Editor.Groups.EditorColors.Data
+namespace VladislavTsurikov.UIElementsUtility.Editor.Groups.EditorColors
 {
     [Serializable]
     public class ThemeColor

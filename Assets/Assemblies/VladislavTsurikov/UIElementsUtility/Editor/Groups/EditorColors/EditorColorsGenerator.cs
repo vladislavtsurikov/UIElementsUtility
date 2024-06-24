@@ -3,10 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
 using VladislavTsurikov.CsCodeGenerator.Runtime;
-using VladislavTsurikov.CsCodeGenerator.Runtime.Enums;
-using VladislavTsurikov.CsCodeGenerator.Runtime.Utility;
 using VladislavTsurikov.UIElementsUtility.Editor.Core;
-using VladislavTsurikov.UIElementsUtility.Editor.Groups.EditorColors.Data;
 using VladislavTsurikov.UIElementsUtility.Runtime.Core.Utility;
 
 namespace VladislavTsurikov.UIElementsUtility.Editor.Groups.EditorColors

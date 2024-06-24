@@ -1,4 +1,4 @@
-﻿namespace VladislavTsurikov.UIElementsUtility.Runtime.Enums
+﻿namespace VladislavTsurikov.UIElementsUtility.Runtime
 {
     public enum ButtonStyle
     {

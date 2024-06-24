@@ -1,7 +1,7 @@
 ﻿using System;
 using UnityEngine.UIElements;
 
-namespace VladislavTsurikov.UIElementsUtility.Runtime.Groups.Layouts.Data
+namespace VladislavTsurikov.UIElementsUtility.Runtime.Groups.Layouts
 {
     [Serializable]
     public class LayoutInfo

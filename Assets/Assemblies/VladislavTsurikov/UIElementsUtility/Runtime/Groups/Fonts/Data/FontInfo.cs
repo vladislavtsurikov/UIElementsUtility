@@ -1,8 +1,7 @@
 ﻿using System;
 using UnityEngine;
-using VladislavTsurikov.UIElementsUtility.Runtime.Groups.Fonts.Enums;
 
-namespace VladislavTsurikov.UIElementsUtility.Runtime.Groups.Fonts.Data
+namespace VladislavTsurikov.UIElementsUtility.Runtime.Groups.Fonts
 {
     [Serializable]
     public class FontInfo

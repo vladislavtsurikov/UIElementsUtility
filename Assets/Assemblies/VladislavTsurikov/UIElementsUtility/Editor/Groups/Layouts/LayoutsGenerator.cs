@@ -3,11 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using UnityEngine.UIElements;
 using VladislavTsurikov.CsCodeGenerator.Runtime;
-using VladislavTsurikov.CsCodeGenerator.Runtime.Enums;
-using VladislavTsurikov.CsCodeGenerator.Runtime.Utility;
 using VladislavTsurikov.UIElementsUtility.Editor.Core;
 using VladislavTsurikov.UIElementsUtility.Runtime.Core.Utility;
-using VladislavTsurikov.UIElementsUtility.Runtime.Groups.Layouts.Data;
+using VladislavTsurikov.UIElementsUtility.Runtime.Groups.Layouts;
 
 namespace VladislavTsurikov.UIElementsUtility.Editor.Groups.Layouts
 {

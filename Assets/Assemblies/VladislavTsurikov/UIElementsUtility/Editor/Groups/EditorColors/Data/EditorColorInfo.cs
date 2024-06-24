@@ -1,9 +1,9 @@
 ﻿#if UNITY_EDITOR
 using System;
 using UnityEngine;
-using VladislavTsurikov.Utility.Runtime.Extensions;
+using VladislavTsurikov.Utility.Runtime;
 
-namespace VladislavTsurikov.UIElementsUtility.Editor.Groups.EditorColors.Data
+namespace VladislavTsurikov.UIElementsUtility.Editor.Groups.EditorColors
 {
     [Serializable]
     public class EditorColorInfo

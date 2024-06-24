@@ -1,10 +1,9 @@
 #if !DISABLE_VISUAL_ELEMENTS
 using UnityEngine;
 using UnityEngine.UIElements;
-using VladislavTsurikov.UIElementsSamples.Runtime.Content.Inventory.Scripts;
-using VladislavTsurikov.UIElementsUtility.Runtime.Groups.Layouts.Data;
+using VladislavTsurikov.UIElementsUtility.Runtime.Groups.Layouts;
 
-namespace VladislavTsurikov.UIElementsSamples.Runtime.Inventory.Controllers
+namespace VladislavTsurikov.UIElementsSamples.Runtime.Inventory
 {
     [ExecuteInEditMode]
     public class InventoryController : MonoBehaviour
@@ -13,7 +12,7 @@ namespace VladislavTsurikov.UIElementsSamples.Runtime.Inventory.Controllers
         private UIDocument _uiDocument;
         
         [SerializeField] 
-        private Content.Inventory.Scripts.Inventory _inventory;
+        private Inventory _inventory;
 
         private InventoryView _view;
         

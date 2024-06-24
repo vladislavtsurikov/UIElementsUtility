@@ -2,7 +2,7 @@
 
 namespace VladislavTsurikov.CsCodeGenerator.Runtime
 {
-    public static class Util
+    public static class Constants
     {
         public static string Using = "using";
         public static string Namespace = "namespace";

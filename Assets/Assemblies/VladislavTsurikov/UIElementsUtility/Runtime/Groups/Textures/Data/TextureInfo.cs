@@ -1,8 +1,8 @@
 ﻿using System;
 using UnityEngine;
-using VladislavTsurikov.Utility.Runtime.Extensions;
+using VladislavTsurikov.Utility.Runtime;
 
-namespace VladislavTsurikov.UIElementsUtility.Runtime.Groups.Textures.Data
+namespace VladislavTsurikov.UIElementsUtility.Runtime.Groups.Textures
 {
     [Serializable]
     public class TextureInfo

@@ -1,15 +1,11 @@
-﻿using System.Linq;
+﻿using System;
+using System.Linq;
+using UnityEditor;
 using UnityEngine;
 using VladislavTsurikov.UIElementsUtility.Runtime.Core;
-using VladislavTsurikov.UIElementsUtility.Runtime.Groups.Fonts.Enums;
 using VladislavTsurikov.UIElementsUtility.Runtime.Utility;
-#if UNITY_EDITOR
-using System;
-using System.IO;
-using UnityEditor;
-#endif
 
-namespace VladislavTsurikov.UIElementsUtility.Runtime.Groups.Fonts.Data
+namespace VladislavTsurikov.UIElementsUtility.Runtime.Groups.Fonts
 {
     [
         CreateAssetMenu

@@ -3,10 +3,8 @@ using System.IO;
 using VladislavTsurikov.UIElementsUtility.Content;
 using VladislavTsurikov.UIElementsUtility.Editor.Core;
 using VladislavTsurikov.UIElementsUtility.Editor.Groups.EditorColors;
-using VladislavTsurikov.UIElementsUtility.Editor.Groups.EditorColors.Data;
-using VladislavTsurikov.UIElementsUtility.Editor.Groups.SelectableColors.Data;
 using VladislavTsurikov.UIElementsUtility.Runtime.Core.Utility;
-using VladislavTsurikov.Utility.Runtime.Extensions;
+using VladislavTsurikov.Utility.Runtime;
 
 namespace VladislavTsurikov.UIElementsUtility.Editor.Groups.SelectableColors
 {

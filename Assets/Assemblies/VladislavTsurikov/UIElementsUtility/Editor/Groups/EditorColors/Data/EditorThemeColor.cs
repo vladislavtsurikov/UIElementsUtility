@@ -2,7 +2,7 @@
 using System;
 using UnityEditor;
 
-namespace VladislavTsurikov.UIElementsUtility.Editor.Groups.EditorColors.Data
+namespace VladislavTsurikov.UIElementsUtility.Editor.Groups.EditorColors
 {
     [Serializable]
     public class EditorThemeColor : ThemeColor

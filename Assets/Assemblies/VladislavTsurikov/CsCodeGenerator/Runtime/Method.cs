@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using VladislavTsurikov.CsCodeGenerator.Runtime.Enums;
 
 namespace VladislavTsurikov.CsCodeGenerator.Runtime
 {
@@ -36,8 +35,8 @@ namespace VladislavTsurikov.CsCodeGenerator.Runtime
             if (!IsVisible)
                 return "";
             string result = base.ToString() + BaseParametersFormated;
-            string bracesPrefix = BracesInNewLine ? (Util.NewLine + Indent) : " ";
-            string curentIndent = Util.NewLine + Indent + CsGenerator.IndentSingle;
+            string bracesPrefix = BracesInNewLine ? (Constants.NewLine + Indent) : " ";
+            string curentIndent = Constants.NewLine + Indent + CsGenerator.IndentSingle;
             result += bracesPrefix + "{";
             result += BodyLines.Count == 0 ? "" : (BracesInNewLine ? curentIndent : " ") + String.Join(curentIndent, BodyLines);
             result += bracesPrefix + "}";

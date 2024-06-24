@@ -1,7 +1,7 @@
 ﻿using System;
 using UnityEngine.UIElements;
 
-namespace VladislavTsurikov.UIElementsUtility.Runtime.Groups.Styles.Data
+namespace VladislavTsurikov.UIElementsUtility.Runtime.Groups.Styles
 {
     [Serializable]
     public class StyleInfo

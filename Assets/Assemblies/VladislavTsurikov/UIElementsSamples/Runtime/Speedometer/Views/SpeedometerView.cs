@@ -2,8 +2,9 @@
 using System.Collections.Generic;
 using UnityEngine.UIElements;
 using VladislavTsurikov.UIElementsUtility;
+using VladislavTsurikov.UIElementsUtility.Runtime;
 
-namespace VladislavTsurikov.UIElementsSamples.Runtime.Speedometer.Views
+namespace VladislavTsurikov.UIElementsSamples.Runtime.Speedometer
 {
     public class SpeedometerView : VisualElement
     {

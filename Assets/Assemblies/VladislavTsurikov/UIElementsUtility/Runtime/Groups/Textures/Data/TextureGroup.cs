@@ -1,15 +1,14 @@
-﻿using System.Linq;
+﻿using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 using VladislavTsurikov.UIElementsUtility.Runtime.Core;
-using VladislavTsurikov.Utility.Runtime.Extensions;
-#if UNITY_EDITOR
-using VladislavTsurikov.UIElementsUtility.Runtime.Groups.Textures.Utility;
-using UnityEditor;
 using VladislavTsurikov.Utility.Runtime;
-using System.Collections.Generic;
+#if UNITY_EDITOR
+using UnityEditor;
+using VladislavTsurikov.UIElementsUtility.Editor.Groups.Textures;
 #endif
 
-namespace VladislavTsurikov.UIElementsUtility.Runtime.Groups.Textures.Data
+namespace VladislavTsurikov.UIElementsUtility.Runtime.Groups.Textures
 {
     [
         CreateAssetMenu

@@ -6,13 +6,61 @@
 
 #if UNITY_EDITOR
 using UnityEngine;
+using VladislavTsurikov.UIElementsUtility.Editor.Groups.EditorColors;
 using VladislavTsurikov.UIElementsUtility.Runtime.Core.Utility;
-using VladislavTsurikov.UIElementsUtility.Editor.Groups.EditorColors.Data;
 
-namespace VladislavTsurikov.UIElementsUtility
+namespace VladislavTsurikov.UIElementsUtility.Runtime
 {
     public static class GetEditorColor
     {
+        public static class EditorUI
+        {
+            public enum ColorName
+            {
+                Add,
+                Remove,
+                Selection,
+                TextTitle,
+                FieldIcon,
+                TextSubtitle,
+                TextDescription,
+                Background
+            }
+
+            private static EditorColorPalette s_colorPalette;
+            private static Color? s_add;
+            private static Color? s_remove;
+            private static Color? s_selection;
+            private static Color? s_textTitle;
+            private static Color? s_fieldIcon;
+            private static Color? s_textSubtitle;
+            private static Color? s_textDescription;
+            private static Color? s_background;
+
+            private static EditorColorPalette СolorPalette => s_colorPalette != null? s_colorPalette: s_colorPalette = DataGroupUtility.GetGroup<EditorColorPalette, EditorColorInfo>("EditorUI");
+
+            public static Color Add => (Color) (s_add ?? (s_add = GetColor(ColorName.Add)));
+
+            public static Color Remove => (Color) (s_remove ?? (s_remove = GetColor(ColorName.Remove)));
+
+            public static Color Selection => (Color) (s_selection ?? (s_selection = GetColor(ColorName.Selection)));
+
+            public static Color TextTitle => (Color) (s_textTitle ?? (s_textTitle = GetColor(ColorName.TextTitle)));
+
+            public static Color FieldIcon => (Color) (s_fieldIcon ?? (s_fieldIcon = GetColor(ColorName.FieldIcon)));
+
+            public static Color TextSubtitle => (Color) (s_textSubtitle ?? (s_textSubtitle = GetColor(ColorName.TextSubtitle)));
+
+            public static Color TextDescription => (Color) (s_textDescription ?? (s_textDescription = GetColor(ColorName.TextDescription)));
+
+            public static Color Background => (Color) (s_background ?? (s_background = GetColor(ColorName.Background)));
+
+            private static Color GetColor(ColorName colorName)
+            {
+                return СolorPalette.GetColor(colorName.ToString());
+            }
+        }
+
         public static class Default
         {
             public enum ColorName

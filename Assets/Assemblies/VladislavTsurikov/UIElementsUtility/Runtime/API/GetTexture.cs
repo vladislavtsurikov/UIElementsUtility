@@ -5,10 +5,10 @@
 //.........................
 
 using UnityEngine;
-using VladislavTsurikov.UIElementsUtility.Runtime.Groups.Textures.Data;
 using VladislavTsurikov.UIElementsUtility.Runtime.Core.Utility;
+using VladislavTsurikov.UIElementsUtility.Runtime.Groups.Textures;
 
-namespace VladislavTsurikov.UIElementsUtility
+namespace VladislavTsurikov.UIElementsUtility.Runtime
 {
     public static class GetTexture
     {

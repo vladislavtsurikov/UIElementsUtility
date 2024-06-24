@@ -2,9 +2,7 @@
 {
     public abstract class DataTypeSingleton<T> where T : DataTypeSingleton<T>, new()
     {
-        private static T _instance = new T();
-        
-        public static T Instance => _instance;
+        public static T Instance { get; } = new T();
     }
 }
 

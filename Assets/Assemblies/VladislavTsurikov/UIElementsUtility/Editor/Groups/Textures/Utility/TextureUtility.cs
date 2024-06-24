@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEditor;
 using UnityEngine;
 
-namespace VladislavTsurikov.UIElementsUtility.Runtime.Groups.Textures.Utility
+namespace VladislavTsurikov.UIElementsUtility.Editor.Groups.Textures
 {
     public static class TextureUtility
     {

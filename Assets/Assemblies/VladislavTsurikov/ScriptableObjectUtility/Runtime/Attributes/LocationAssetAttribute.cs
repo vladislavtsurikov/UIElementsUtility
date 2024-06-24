@@ -1,7 +1,7 @@
 using System;
 using VladislavTsurikov.Core.Runtime;
 
-namespace VladislavTsurikov.ScriptableObjectUtility.Runtime.Attributes 
+namespace VladislavTsurikov.ScriptableObjectUtility.Runtime 
 {
     [AttributeUsage(AttributeTargets.Class)]
     public sealed class LocationAssetAttribute : Attribute

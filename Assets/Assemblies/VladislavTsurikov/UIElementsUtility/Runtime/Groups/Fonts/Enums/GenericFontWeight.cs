@@ -1,4 +1,4 @@
-﻿namespace VladislavTsurikov.UIElementsUtility.Runtime.Groups.Fonts.Enums
+﻿namespace VladislavTsurikov.UIElementsUtility.Runtime.Groups.Fonts
 {
     public enum GenericFontWeight
     {
